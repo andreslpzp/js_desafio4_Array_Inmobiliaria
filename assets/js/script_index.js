@@ -257,17 +257,3 @@ function generatePropertyCards(properties) {
         </div>
     `).join('');
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const ventaContainer = document.querySelector('#venta .row');
-    if (ventaContainer) {
-        ventaContainer.innerHTML = generatePropertyCards(Propiedadesenventa);
-    }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const ventaContainer = document.querySelector('#alquiler .row');
-    if (ventaContainer) {
-        ventaContainer.innerHTML = generatePropertyCards(PropiedadesenAlquiler);
-    }
-});
